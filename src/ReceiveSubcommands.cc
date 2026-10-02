@@ -4604,8 +4604,6 @@ static void on_medical_center_bb(std::shared_ptr<Client> c, SubcommandMessage&) 
   if (!l->is_game()) {
     throw std::runtime_error("6xC5 command sent in non-game lobby");
   }
-
-  c->character_file()->remove_meseta(10, false);
 }
 
 static void on_battle_restart_bb(std::shared_ptr<Client> c, SubcommandMessage& msg) {
